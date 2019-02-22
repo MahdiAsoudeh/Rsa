@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_gk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Generate Keys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_text"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="text"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gk" />
+
+    <Button
+        android:id="@+id/btn_enc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="encrypt"
+        app:layout_constraintStart_toStartOf="@+id/edt_text"
+        app:layout_constraintTop_toBottomOf="@+id/edt_text" />
+
+    <Button
+        android:id="@+id/btn_dec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="decrypt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_enc"
+        app:layout_constraintEnd_toEndOf="@+id/edt_text" />
+
+    <EditText
+        android:id="@+id/edt_enc"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="encrypted text"
+        android:inputType="textMultiLine"
+        android:lines="100"
+        android:padding="8dp"
+        android:singleLine="false"
+        android:textIsSelectable="true"
+        android:tooltipText="wwwwwww"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
